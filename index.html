@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Empresa</title>
+		<script src="js/estilo.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+	</head>
+	<body>
+		<div class="container">
+		<h1>Cadastro de Cliente</h1>
+			<form class="row">
+				<div class="col-4">
+					<label>Nome:</label>
+					<input type="text" name="nome" class="form-control"/>
+				</div>
+				<div class="col-2">
+					<label>Selecionar (CPF/CNPJ)</label>
+					<select id="select" onchange="CPF_CNPJ()" class="form-control">
+						<option value=""></option>
+						<option value="CPF">CPF</option>
+						<option value="CNPJ">CNPJ</option>
+					</select>
+				</div>
+				<div class="col-3">
+					<label id="retorno">&nbsp;</label>
+					<input type="text" name="dados" class="form-control"/>
+				</div>
+				<div class="col-2">
+					<button type="submit" class="btn btn-primary" style="margin-top: 31px;">Salvar</button>
+				</div>	
+			</form>
+			<br/>
+			<table class="table table-striped">
+				<colgroup>
+					<col width="200">
+					<col width="100">
+					<col width="50">
+					<col width="50">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>CPF/CNPJ</th>
+						<th>Editar</th>
+						<th>Excluir</th>
+					</tr>
+				</thead>
+				<body>
+					<tr>
+						<td>Marcile dos Santos</td>
+						<th>111.111.111-00</th>
+						<th>
+							<button class="btn btn-success">Editar</button>
+						</th>
+						<th>
+							<button class="btn btn-danger">Excluir</button>
+						</th>
+					</tr>
+					<tr>
+						<td>Leoni Leves de Barros</td>
+						<th>000.111.000-01</th>
+						<th>
+							<button class="btn btn-success">Editar</button>
+						</th>
+						<th>
+							<button class="btn btn-danger">Excluir</button>
+						</th>
+					</tr>
+					<tr>
+						<td>Comercial Barros</td>
+						<th>02.222.125/0001-29</th>
+						<th>
+							<button class="btn btn-success">Editar</button>
+						</th>
+						<th>
+							<button class="btn btn-danger">Excluir</button>
+						</th>
+					</tr>
+					<tr>
+						<td>Supermercado Vieira</td>
+						<th>33.010.101/0000-12</th>
+						<th>
+							<button class="btn btn-success">Editar</button>
+						</th>
+						<th>
+							<button class="btn btn-danger">Excluir</button>
+						</th>
+					</tr>
+				</body>
+			</table>
+		</div>
+	</body>
+</html>
